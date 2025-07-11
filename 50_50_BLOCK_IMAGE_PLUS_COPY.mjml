@@ -1,0 +1,67 @@
+<mjml>
+  <mj-head>
+    <mj-title>50/50 Responsive Blocks - Gmail Compatible</mj-title>
+    <mj-attributes>
+      <mj-text font-family="Arial, sans-serif" font-size="14px" line-height="1.6" color="#333333" />
+      <mj-image padding="0" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body>
+    
+    <!-- Block 1: Image + Text (Desktop) / Image + Text (Mobile) -->
+    <mj-section background-color="#f8f9fa" padding="20px 0">
+      <mj-column width="50%" padding="10px">
+        <mj-image 
+          src="https://d3k81ch9hvuctc.cloudfront.net/company/WkTqs3/images/2fef3644-e97a-4a80-9337-8c9917a96494.jpeg" 
+          alt="Sample Image 1"
+          border-radius="8px"
+        />
+      </mj-column>
+      <mj-column width="50%" padding="10px">
+        <mj-text padding="20px">
+          <h2 style="margin: 0 0 15px 0; color: #2c3e50; font-size: 24px;">Featured Content</h2>
+          <p style="margin: 0 0 15px 0;">This is the first block with image on the left and text on the right on desktop. On mobile, the image will appear above the text for optimal readability.</p>
+          <p style="margin: 0;"><a href="#" style="color: #4CAF50; text-decoration: none; font-weight: bold;">Learn More →</a></p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Block 2: For Gmail compatibility, we'll use Image + Text layout -->
+    <!-- This will show as Image + Text on both desktop and mobile -->
+    <mj-section background-color="#ffffff" padding="20px 0">
+      <mj-column width="50%" padding="10px">
+        <mj-image 
+          src="https://d3k81ch9hvuctc.cloudfront.net/company/WkTqs3/images/2fef3644-e97a-4a80-9337-8c9917a96494.jpeg" 
+          alt="Sample Image 2"
+          border-radius="8px"
+        />
+      </mj-column>
+      <mj-column width="50%" padding="10px">
+        <mj-text padding="20px">
+          <h2 style="margin: 0 0 15px 0; color: #2c3e50; font-size: 24px;">Our Services</h2>
+          <p style="margin: 0 0 15px 0;">This is the second block that maintains consistent Image + Text layout across all devices for maximum Gmail compatibility.</p>
+          <p style="margin: 0;"><a href="#" style="color: #2196F3; text-decoration: none; font-weight: bold;">Discover More →</a></p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Block 3: Image + Text (Desktop) / Image + Text (Mobile) -->
+    <mj-section background-color="#f8f9fa" padding="20px 0">
+      <mj-column width="50%" padding="10px">
+        <mj-image 
+          src="https://d3k81ch9hvuctc.cloudfront.net/company/WkTqs3/images/2fef3644-e97a-4a80-9337-8c9917a96494.jpeg" 
+          alt="Sample Image 3"
+          border-radius="8px"
+        />
+      </mj-column>
+      <mj-column width="50%" padding="10px">
+        <mj-text padding="20px">
+          <h2 style="margin: 0 0 15px 0; color: #2c3e50; font-size: 24px;">Get Started</h2>
+          <p style="margin: 0 0 15px 0;">This is the third block with image on the left and text on the right on desktop. On mobile, it maintains the same image-above-text pattern as the other blocks.</p>
+          <p style="margin: 0;"><a href="#" style="color: #FF9800; text-decoration: none; font-weight: bold;">Start Now →</a></p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>
