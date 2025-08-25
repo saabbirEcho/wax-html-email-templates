@@ -1,0 +1,127 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-all font-family="Helvetica, Arial, sans-serif" />
+      <mj-text line-height="1.5" />
+      <mj-button background-color="#000000" color="#ffffff" font-weight="bold" border-radius="0" />
+    </mj-attributes>
+    <mj-style>
+      .logo-text {
+        font-size: 24px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: #000000;
+        text-transform: uppercase;
+      }
+      .header-link {
+        color: #000000;
+        font-size: 14px;
+        text-decoration: none;
+      }
+      .social-icon {
+        padding: 0 10px;
+      }
+      .footer-link {
+        color: #000000;
+        text-decoration: none;
+        font-size: 14px;
+        padding: 0 10px;
+      }
+      .unsubscribe {
+        font-size: 12px;
+        color: #555555;
+      }
+      .dynamic-text {
+        font-weight: bold;
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body background-color="#FFFFFF">
+    
+    <!-- Header Section -->
+    <mj-section>
+      
+      <!-- Logo -->
+      <mj-column>
+        <mj-image src="{{ shop.logo_url }}" alt="Logo" width="200px" padding="0" />
+        <mj-image src="https://d3k81ch9hvuctc.cloudfront.net/company/WkTqs3/images/81a39b7d-bb57-4929-b5ab-544a358dce6a.png" alt="Logo" width="200px" padding="0" />
+      </mj-column><!-- End of Logo -->
+      
+      <!-- Navbar -->
+      <mj-column>
+        <mj-navbar align="right" base-url="{{ shop.domain }}">
+          <mj-navbar-link href="{{ shop.domain }}/collections/ss25" css-class="header-link">SS25</mj-navbar-link>
+          <mj-navbar-link href="{{ shop.domain }}/collections/overshirts" css-class="header-link">OVERSHIRTS</mj-navbar-link>
+          <mj-navbar-link href="{{ shop.domain }}/collections/clothing" css-class="header-link">CLOTHING</mj-navbar-link>
+        </mj-navbar>
+      </mj-column><!-- End of Navbar -->
+      
+    </mj-section><!-- End of Header Section -->
+    
+    <!-- The Wait is Over Section -->
+    <mj-section background-color="#f8f8f8">
+      <mj-column>
+        <mj-image src="https://d3k81ch9hvuctc.cloudfront.net/company/WkTqs3/images/61511f3e-5115-482c-ab21-e1acb41c4d17.png" alt="The Wait is Over" width="500px" padding="20px" />
+        <mj-text font-size="16px" align="center" padding="0 25px 20px 25px">
+          Good news - <span class="dynamic-text">{{ product.variant_title }}</span> is now <strong class="dynamic-text">available</strong>. Make sure not to wait too long to avoid potential disappointment!
+        </mj-text>
+        <mj-image src="{{ product.image_url }}" alt="Product Image" width="400px" padding="20px" />
+        <mj-button background-color="red" border-radius="50px" inner-padding="15px 30px" href="{{ product.product_page_url }}">Shop Now Mj Button</mj-button>
+        <mj-table align="center" width="140px">
+        	<tr>
+          	<td style="border:none; border-radius:60px; font-style:Normal; background:#333333" valign="middle" role="presentation" bgcolor="#333333" align="center"><a style="color:#FFF; text-decoration:none; display:inline-block; background:#333; font-family:&quot;Maison Neue&quot;,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif; font-size:15px; font-style:Normal; font-weight:400; line-height:100%; letter-spacing:0; margin:0; text-transform:none; padding:15px 30px 15px 30px; border-radius:60px" data-auth="NotApplicable" rel="noopener noreferrer" target="_blank" href="{{product.product_page_url}}" data-linkindex="20" title="{{ product.product_page_url }}">Shop Now</a></td>
+          </tr>
+        </mj-table>
+      </mj-column>
+    </mj-section><!-- End of The Wait is Over Section -->
+
+    <!-- Socials Section -->
+    <mj-section padding-bottom="10px">
+      <mj-group width="50%">
+        <mj-column>
+          <mj-image href="https://www.instagram.com/waxlondonclothing/" src="https://d3k81ch9hvuctc.cloudfront.net/company/WkTqs3/images/cc3cf8b4-dffb-4d94-a973-9e4d55dbe40f.png" width="24px" padding="10px" alt="Instagram" />
+        </mj-column>
+        <mj-column>
+          <mj-image href="https://business.facebook.com/waxlondonclothing/" src="https://d3k81ch9hvuctc.cloudfront.net/company/WkTqs3/images/5759751a-cc5a-43e0-90de-d80a6a45be86.png" width="24px" padding="10px" alt="Facebook" />
+        </mj-column>
+        <mj-column>
+          <mj-image href="https://www.tiktok.com/@waxlondon" src="https://d3k81ch9hvuctc.cloudfront.net/company/WkTqs3/images/df98af9d-ab47-4f6d-ad1c-9c925cdd6b8e.png" width="24px" padding="10px" alt="TikTok" />
+        </mj-column>
+        <mj-column>
+          <mj-image href="https://www.pinterest.co.uk/WaxLondonClothing/" src="https://d3k81ch9hvuctc.cloudfront.net/company/WkTqs3/images/59ed0784-51f7-4975-aa1b-b60790a6500a.png" width="24px" padding="10px" alt="Pinterest" />
+        </mj-column>
+        <mj-column>
+          <mj-image href="https://open.spotify.com/user/qd2ouspnes20wg5w8sdo848p6?si=037ac7a55c874d97" src="https://d3k81ch9hvuctc.cloudfront.net/company/WkTqs3/images/dc144278-1663-4269-a735-08add6891117.png" width="24px" padding="10px" alt="Spotify" />
+        </mj-column>
+        <mj-column>
+          <mj-image href="https://www.youtube.com/@waxlondon1567" src="https://d3k81ch9hvuctc.cloudfront.net/company/WkTqs3/images/091aa554-d956-47c1-8719-1b2d726cc8a8.png" width="24px" padding="10px" alt="YouTube" />
+        </mj-column>
+      </mj-group>
+    </mj-section><!-- End of Socials Section -->
+    
+    <!-- Footer Links Section -->
+    <mj-section padding-top="0">
+    	<mj-column>
+        <mj-text align="center" padding="10px 0">
+          <a href="{{ shop.domain }}" class="footer-link">{{ shop.domain }}</a>
+          <a href="{{ shop.domain }}/account" class="footer-link">My Account</a>
+          <a href="{{ shop.domain }}/contact" class="footer-link">Contact Us</a>
+        </mj-text>
+      </mj-column>
+    </mj-section><!-- End of Footer Links Section -->
+
+    <!-- Footer Section -->
+    <mj-section>
+      <mj-column>
+        <mj-text align="center" font-size="12px" color="#555555" padding="10px 0 5px 0">
+          <a href="{{ web_view_url }}" class="unsubscribe">View in browser</a> | <a href="{{ product.unsubscribe_url }}" class="unsubscribe">Unsubscribe</a>
+        </mj-text>
+        <mj-text align="center" font-size="12px" color="#555555" padding="5px 0 20px 0">
+          {{ shop.name }} London, 10 – 11 Greenland Place, London NW1 0AP<br />
+          ©{{ year }} {{ shop.name }} London
+        </mj-text>
+      </mj-column>
+    </mj-section><!-- End of Footer Section -->
+    
+  </mj-body>
+</mjml>
