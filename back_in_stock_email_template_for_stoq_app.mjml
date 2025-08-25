@@ -1,9 +1,10 @@
 <mjml>
   <mj-head>
+    <mj-preview>Good news - {{ product.title_incl_variant }} is now available. Make sure not to wait too long to avoid potential disappointment!</mj-preview>
     <mj-attributes>
-      <mj-all font-family="Helvetica, Arial, sans-serif" />
+      <mj-all font-family="Maison Neue, Helvetica Neue, Helvetica, Arial, sans-serif" />
       <mj-text line-height="1.5" />
-      <mj-button background-color="#000000" color="#ffffff" font-weight="bold" border-radius="0" />
+      <mj-button background-color="#333333" color="#ffffff" font-weight="normal" border-radius="60px" inner-padding="15px 30px" font-size="15px" />
     </mj-attributes>
     <mj-style>
       .logo-text {
@@ -34,25 +35,57 @@
       .dynamic-text {
         font-weight: bold;
       }
+      
+      @font-face {
+        font-family: "Beirut Display";
+        src: url(//cdn.shopify.com/s/files/1/0575/9575/6709/t/82/assets/BeirutDisplay-Regular.woff2?v=174577165024375395221639733995) format("woff2"), url(//cdn.shopify.com/s/files/1/0575/9575/6709/t/82/assets/BeirutDisplay-Regular.woff?v=90914563313296294051639733994) format("woff");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap
+      }
+
+      @font-face {
+        font-family: "Beirut Display";
+        src: url(//cdn.shopify.com/s/files/1/0575/9575/6709/t/82/assets/BeirutDisplay-Bold.woff2?v=63062392648898877021639733988) format("woff2"), url(//cdn.shopify.com/s/files/1/0575/9575/6709/t/82/assets/BeirutDisplay-Bold.woff?v=82441556761526300691639733987) format("woff");
+        font-weight: 800;
+        font-style: normal;
+        font-display: swap
+      }
+
+      @font-face {
+        font-family: "Maison Neue";
+        src: url(//cdn.shopify.com/s/files/1/0575/9575/6709/t/82/assets/MaisonNeue-Book.woff2?v=76063278486294997921639734006) format("woff2"), url(//cdn.shopify.com/s/files/1/0575/9575/6709/t/82/assets/MaisonNeue-Book.woff?v=65875786500221134811639734005) format("woff");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap
+      }
+
+      @font-face {
+        font-family: "Maison Neue";
+        src: url(//cdn.shopify.com/s/files/1/0575/9575/6709/t/82/assets/MaisonNeue-Bold.woff2?v=89608103790610592201639734003) format("woff2"), url(//cdn.shopify.com/s/files/1/0575/9575/6709/t/82/assets/MaisonNeue-Bold.woff?v=21191067650015508101639734003) format("woff");
+        font-weight: 800;
+        font-style: normal;
+        font-display: swap
+      }      
     </mj-style>
   </mj-head>
   <mj-body background-color="#FFFFFF">
     
     <!-- Header Section -->
-    <mj-section>
+    <mj-section padding-bottom="10px">
       
       <!-- Logo -->
-      <mj-column>
-        <mj-image src="{{ shop.logo_url }}" alt="Logo" width="200px" padding="0" />
-        <mj-image src="https://d3k81ch9hvuctc.cloudfront.net/company/WkTqs3/images/81a39b7d-bb57-4929-b5ab-544a358dce6a.png" alt="Logo" width="200px" padding="0" />
+      <mj-column width="100px" vertical-align="middle">
+        <mj-image align="left" src="https://cdn.shopify.com/s/files/1/0575/9575/6709/files/Wax-London-Logo-144_92175e7c-9739-4850-a3d0-1b2d3aa4c126.gif?v=1721884393" alt="Logo" width="100px" padding="0" href="{{ shop.domain }}" />
       </mj-column><!-- End of Logo -->
       
       <!-- Navbar -->
-      <mj-column>
+      <mj-column width="500px" vertical-align="middle">
         <mj-navbar align="right" base-url="{{ shop.domain }}">
-          <mj-navbar-link href="{{ shop.domain }}/collections/ss25" css-class="header-link">SS25</mj-navbar-link>
-          <mj-navbar-link href="{{ shop.domain }}/collections/overshirts" css-class="header-link">OVERSHIRTS</mj-navbar-link>
-          <mj-navbar-link href="{{ shop.domain }}/collections/clothing" css-class="header-link">CLOTHING</mj-navbar-link>
+          <mj-navbar-link href="/collections/ss25" css-class="header-link" padding="10px">SS25</mj-navbar-link>
+          <mj-navbar-link href="/collections/overshirts" css-class="header-link" padding="10px">OVERSHIRTS</mj-navbar-link>
+          <mj-navbar-link href="/collections/clothing" css-class="header-link" padding="10px">CLOTHING</mj-navbar-link>
+          <mj-navbar-link href="/blogs/journal" css-class="header-link" padding="10px">Journal</mj-navbar-link>
         </mj-navbar>
       </mj-column><!-- End of Navbar -->
       
@@ -61,17 +94,21 @@
     <!-- The Wait is Over Section -->
     <mj-section background-color="#f8f8f8">
       <mj-column>
+        
+        <!-- The Wait is Over Image -->
         <mj-image src="https://d3k81ch9hvuctc.cloudfront.net/company/WkTqs3/images/61511f3e-5115-482c-ab21-e1acb41c4d17.png" alt="The Wait is Over" width="500px" padding="20px" />
+        
+        <!-- Main Copy -->
         <mj-text font-size="16px" align="center" padding="0 25px 20px 25px">
-          Good news - <span class="dynamic-text">{{ product.variant_title }}</span> is now <strong class="dynamic-text">available</strong>. Make sure not to wait too long to avoid potential disappointment!
+          Good news - <span class="dynamic-text">{{ product.title_incl_variant }}</span> is now <strong class="dynamic-text">available</strong>. Make sure not to wait too long to avoid potential disappointment!
         </mj-text>
-        <mj-image src="{{ product.image_url }}" alt="Product Image" width="400px" padding="20px" />
-        <mj-button background-color="red" border-radius="50px" inner-padding="15px 30px" href="{{ product.product_page_url }}">Shop Now Mj Button</mj-button>
-        <mj-table align="center" width="140px">
-        	<tr>
-          	<td style="border:none; border-radius:60px; font-style:Normal; background:#333333" valign="middle" role="presentation" bgcolor="#333333" align="center"><a style="color:#FFF; text-decoration:none; display:inline-block; background:#333; font-family:&quot;Maison Neue&quot;,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif; font-size:15px; font-style:Normal; font-weight:400; line-height:100%; letter-spacing:0; margin:0; text-transform:none; padding:15px 30px 15px 30px; border-radius:60px" data-auth="NotApplicable" rel="noopener noreferrer" target="_blank" href="{{product.product_page_url}}" data-linkindex="20" title="{{ product.product_page_url }}">Shop Now</a></td>
-          </tr>
-        </mj-table>
+        
+        <!-- Main Product Image -->
+        <mj-image src="{{ product.image_url }}" alt="Product Image" width="300px" padding="20px 0" href="{{ product.product_page_url }}" />
+        
+        <!-- Shop Now Button -->
+        <mj-button href="{{ product.product_page_url }}">Shop Now</mj-button>
+        
       </mj-column>
     </mj-section><!-- End of The Wait is Over Section -->
 
@@ -113,12 +150,16 @@
     <!-- Footer Section -->
     <mj-section>
       <mj-column>
+        
+        <!-- Unsubscribe Link -->
         <mj-text align="center" font-size="12px" color="#555555" padding="10px 0 5px 0">
           <a href="{{ web_view_url }}" class="unsubscribe">View in browser</a> | <a href="{{ product.unsubscribe_url }}" class="unsubscribe">Unsubscribe</a>
         </mj-text>
+        
+        <!-- Address -->
         <mj-text align="center" font-size="12px" color="#555555" padding="5px 0 20px 0">
-          {{ shop.name }} London, 10 – 11 Greenland Place, London NW1 0AP<br />
-          ©{{ year }} {{ shop.name }} London
+          {{ shop.name }}, 10 – 11 Greenland Place, London NW1 0AP<br />
+          ©2025 {{ shop.name }}
         </mj-text>
       </mj-column>
     </mj-section><!-- End of Footer Section -->
