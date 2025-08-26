@@ -1,0 +1,330 @@
+<mjml>
+  <mj-head>
+    <mj-html-attributes>
+      <mj-html-attribute
+        class="easy-email"
+        multiple-attributes="false"
+        attribute-name="text-color"
+        text-color="#000000"
+      ></mj-html-attribute>
+      <mj-html-attribute
+        class="easy-email"
+        multiple-attributes="false"
+        attribute-name="font-family"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans','Helvetica Neue', sans-serif"
+      ></mj-html-attribute>
+      <mj-html-attribute
+        class="easy-email"
+        multiple-attributes="false"
+        attribute-name="font-size"
+        font-size="14px"
+      ></mj-html-attribute>
+      <mj-html-attribute
+        class="easy-email"
+        multiple-attributes="false"
+        attribute-name="line-height"
+        line-height="1.7"
+      ></mj-html-attribute>
+      <mj-html-attribute
+        class="easy-email"
+        multiple-attributes="false"
+        attribute-name="font-weight"
+        font-weight="400"
+      ></mj-html-attribute>
+      <mj-html-attribute
+        class="easy-email"
+        multiple-attributes="false"
+        attribute-name="responsive"
+        responsive="true"
+      ></mj-html-attribute>
+    </mj-html-attributes>
+
+    <mj-breakpoint width="480px" />
+
+    <mj-font
+      name="Inter"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600"
+    />
+    <mj-attributes>
+      <mj-all font-family="Inter, Arial, sans-serif" />
+      <mj-text font-size="14px" />
+      <mj-text line-height="1.7" />
+      <mj-text font-weight="400" />
+      <mj-all
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans','Helvetica Neue', sans-serif"
+      />
+      <mj-text font-size="14px" />
+      <mj-text color="#000000" />
+      <mj-text line-height="1.7" />
+      <mj-text font-weight="400" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body background-color="#0A0A0A" width="600px"
+    ><mj-raw
+      padding="20px 0px 20px 0px"
+      border="none"
+      direction="ltr"
+      text-align="center"
+      ><!-- Minimal Header --></mj-raw
+    ><mj-section
+      background-repeat="repeat"
+      background-size="auto"
+      background-position="top center"
+      border="none"
+      direction="ltr"
+      text-align="center"
+      padding="20px 0px 20px 0px"
+      ><mj-column
+        border="none"
+        vertical-align="top"
+        width="40%"
+        padding="0px 0px 0px 0px"
+        ><mj-image
+          align="center"
+          height="auto"
+          src="https://cdn.shopify.com/s/files/1/0863/8971/9346/files/hwm526rq8_e9s0ynhimam_image.png"
+          href="https://www.easyemail.pro/?utm_source=email_template"
+          width="150px"
+          padding="10px 25px 10px 25px"
+        ></mj-image></mj-column
+      ><mj-column
+        border="none"
+        vertical-align="top"
+        width="60%"
+        padding="0px 0px 0px 0px"
+        ><mj-navbar
+          align="center"
+          base-url="https://example.com"
+          hamburger="hamburger"
+          ico-color="#ffffff"
+        >
+          <mj-navbar-link
+            color="#ffffff"
+            font-size="13px"
+            target="_blank"
+            href="/products"
+            padding="15px 10px 15px 10px"
+            >Products</mj-navbar-link
+          >
+
+          <mj-navbar-link
+            color="#ffffff"
+            font-size="13px"
+            target="_blank"
+            href="/features"
+            padding="15px 10px 15px 10px"
+            >Features</mj-navbar-link
+          >
+
+          <mj-navbar-link
+            color="#ffffff"
+            font-size="13px"
+            target="_blank"
+            href="/about"
+            padding="15px 10px 15px 10px"
+            >About</mj-navbar-link
+          >
+        </mj-navbar></mj-column
+      ></mj-section
+    ><mj-raw><!-- Hero Section with Gradient --></mj-raw
+    ><mj-section
+      background-repeat="repeat"
+      background-size="auto"
+      background-position="top center"
+      border="none"
+      direction="ltr"
+      text-align="center"
+      padding="0px 0px 0px 0px"
+      ><mj-column border="none" vertical-align="top" padding="0px 0px 0px 0px"
+        ><mj-image
+          align="center"
+          height="auto"
+          src="https://cdn.shopify.com/s/files/1/0863/8971/9346/files/173591821465514_photo-1451187580459-43490279c0fa.png"
+          alt="Tech Banner"
+          padding="10px 25px 10px 25px"
+        ></mj-image
+        ><mj-text
+          align="center"
+          color="#00FF00"
+          font-size="48px"
+          font-weight="bold"
+          padding="20px 25px 10px 25px"
+          >FUTURE IS NOW</mj-text
+        ></mj-column
+      ></mj-section
+    ><mj-raw><!-- Stats Grid --></mj-raw
+    ><mj-section
+      background-repeat="repeat"
+      background-size="auto"
+      background-position="top center"
+      border="none"
+      direction="ltr"
+      text-align="center"
+      background-color="#1A1A1A"
+      padding="30px 30px 30px 30px"
+      ><mj-column
+        border="none"
+        vertical-align="top"
+        width="33.33%"
+        padding="0px 0px 0px 0px"
+        ><mj-text
+          align="center"
+          color="#00FF00"
+          font-size="36px"
+          padding="10px 25px 10px 25px"
+          >98%</mj-text
+        ><mj-text align="center" color="#ffffff" padding="10px 25px 10px 25px"
+          >Efficiency</mj-text
+        ></mj-column
+      ><mj-column
+        border="none"
+        vertical-align="top"
+        width="33.33%"
+        padding="0px 0px 0px 0px"
+        ><mj-text
+          align="center"
+          color="#00FF00"
+          font-size="36px"
+          padding="10px 25px 10px 25px"
+          >24/7</mj-text
+        ><mj-text align="center" color="#ffffff" padding="10px 25px 10px 25px"
+          >Support</mj-text
+        ></mj-column
+      ><mj-column
+        border="none"
+        vertical-align="top"
+        width="33.33%"
+        padding="0px 0px 0px 0px"
+        ><mj-text
+          align="center"
+          color="#00FF00"
+          font-size="36px"
+          padding="10px 25px 10px 25px"
+          >5M+</mj-text
+        ><mj-text align="center" color="#ffffff" padding="10px 25px 10px 25px"
+          >Users</mj-text
+        ></mj-column
+      ></mj-section
+    ><mj-raw><!-- Feature Blocks --></mj-raw
+    ><mj-section
+      background-repeat="repeat"
+      background-size="auto"
+      background-position="top center"
+      border="none"
+      direction="ltr"
+      text-align="center"
+      padding="20px 0px 20px 0px"
+      ><mj-column
+        border="none"
+        vertical-align="top"
+        background-color="#1A1A1A"
+        width="50%"
+        padding="20px 20px 20px 20px"
+        ><mj-text
+          align="left"
+          color="#00FF00"
+          font-size="24px"
+          padding="10px 25px 10px 25px"
+          >AI Integration</mj-text
+        ><mj-text align="left" color="#ffffff" padding="10px 25px 10px 25px"
+          >Advanced machine learning algorithms powering next-gen
+          solutions.</mj-text
+        ></mj-column
+      ><mj-column
+        border="none"
+        vertical-align="top"
+        background-color="#1A1A1A"
+        width="50%"
+        padding="20px 20px 20px 20px"
+        ><mj-text
+          align="left"
+          color="#00FF00"
+          font-size="24px"
+          padding="10px 25px 10px 25px"
+          >Cloud Native</mj-text
+        ><mj-text align="left" color="#ffffff" padding="10px 25px 10px 25px"
+          >Scalable infrastructure built for the modern web.</mj-text
+        ></mj-column
+      ></mj-section
+    ><mj-raw><!-- CTA Section --></mj-raw
+    ><mj-section
+      background-repeat="repeat"
+      background-size="auto"
+      background-position="top center"
+      border="none"
+      direction="ltr"
+      text-align="center"
+      background-color="#00FF00"
+      padding="40px 40px 40px 40px"
+      ><mj-column border="none" vertical-align="top" padding="0px 0px 0px 0px"
+        ><mj-text
+          align="center"
+          color="#000000"
+          font-size="24px"
+          padding="10px 25px 10px 25px"
+          >Ready to Transform?</mj-text
+        ><mj-button
+          align="center"
+          background-color="#000000"
+          color="#00FF00"
+          font-weight="normal"
+          border-radius="3px"
+          line-height="120%"
+          target="_blank"
+          vertical-align="middle"
+          border="none"
+          text-align="center"
+          href="#"
+          padding="10px 25px 10px 25px"
+          >GET STARTED</mj-button
+        ></mj-column
+      ></mj-section
+    ><mj-raw><!-- Footer --></mj-raw
+    ><mj-section
+      background-repeat="repeat"
+      background-size="auto"
+      background-position="top center"
+      border="none"
+      direction="ltr"
+      text-align="center"
+      background-color="#1A1A1A"
+      padding="20px 0px 20px 0px"
+      ><mj-column border="none" vertical-align="top" padding="0px 0px 0px 0px"
+        ><mj-social
+          align="center"
+          color="#333333"
+          mode="horizontal"
+          font-size="15px"
+          font-weight="normal"
+          border-radius="3px"
+          line-height="22px"
+          text-padding="4px 4px 4px 0px"
+          icon-padding="0px"
+          icon-size="30px"
+          padding="10px 25px 10px 25px"
+        >
+          <mj-social-element
+            background-color="#00FF00"
+            src="https://cdn.shopify.com/s/files/1/0863/8971/9346/files/mfpkmlhg2mva_os9dl4p1_image.png"
+          ></mj-social-element>
+
+          <mj-social-element
+            background-color="#00FF00"
+            src="https://cdn.shopify.com/s/files/1/0863/8971/9346/files/bc9v51iia1minm3_7hoz_image.png"
+          ></mj-social-element>
+
+          <mj-social-element
+            background-color="#00FF00"
+            src="https://cdn.shopify.com/s/files/1/0863/8971/9346/files/yalfxko4tea86assl7rfg_image.png"
+          ></mj-social-element> </mj-social
+        ><mj-text
+          align="center"
+          color="#666666"
+          font-size="12px"
+          padding="10px 25px 10px 25px"
+          >© 2024 TechCorp. All rights reserved.</mj-text
+        ></mj-column
+      ></mj-section
+    ></mj-body
+  ></mjml
+>
