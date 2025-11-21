@@ -1,23 +1,37 @@
 <mjml>
+  <mj-head>
+    <mj-style>
+      .header-link {
+        font-size: 12px !important;
+      }      
+      @media only screen and (max-width:479px) {
+        .header-link {
+          font-size: 10px !important;
+        }
+      }    
+    </mj-style>
+  </mj-head>
   <mj-body background-color="#FFFFFF">
       
     <!-- Header Section -->
     <mj-section padding-bottom="10px" border="none" direction="ltr" text-align="center">
     
-      <!-- Logo -->
-      <mj-column width="30%" vertical-align="top" border="none" padding="0px 0px 0px 0px">
-        <!--<mj-image align="center" src="https://cdn.shopify.com/s/files/1/0575/9575/6709/files/Wax-London-Logo-144_92175e7c-9739-4850-a3d0-1b2d3aa4c126.gif?v=1721884393" alt="Logo" width="100px" padding="0" href="{{ shop.domain }}" />-->
-        <mj-image align="center" src="https://d3k81ch9hvuctc.cloudfront.net/company/WkTqs3/images/81a39b7d-bb57-4929-b5ab-544a358dce6a.png" alt="Logo" width="200px" padding="0" href="{{ shop.domain }}" />
-      </mj-column><!-- End of Logo -->
-      
-      <!-- Navbar -->
-      <mj-column width="70%" vertical-align="top" border="none" padding="0px 0px 0px 0px">
-        <mj-navbar align="center" base-url="{{ shop.domain }}">
-        <mj-navbar-link href="https://waxlondon.com/collections/black-friday" css-class="header-link" padding="10px">BLACK FRIDAY</mj-navbar-link>
-        <mj-navbar-link href="https://waxlondon.com/collections/aw25" css-class="header-link" padding="10px">AW25</mj-navbar-link>
-        <mj-navbar-link href="https://waxlondon.com/collections/all-clothing" css-class="header-link" padding="10px">CLOTHING</mj-navbar-link>
-        </mj-navbar>
-      </mj-column><!-- End of Navbar -->
+      <mj-group>
+        <!-- Logo -->
+        <mj-column width="25%" vertical-align="middle" border="none" padding="0px 0px 0px 0px">
+          <!--<mj-image align="center" src="https://cdn.shopify.com/s/files/1/0575/9575/6709/files/Wax-London-Logo-144_92175e7c-9739-4850-a3d0-1b2d3aa4c126.gif?v=1721884393" alt="Logo" width="100px" padding="0" href="{{ shop.domain }}" />-->
+          <mj-image align="left" src="https://d3k81ch9hvuctc.cloudfront.net/company/WkTqs3/images/81a39b7d-bb57-4929-b5ab-544a358dce6a.png" alt="Logo" width="200px" padding="0" href="{{ shop.domain }}" />
+        </mj-column><!-- End of Logo -->
+
+        <!-- Navbar -->
+        <mj-column width="75%" vertical-align="middle" border="none" padding="0px 0px 0px 0px">
+          <mj-navbar align="right" base-url="{{ shop.domain }}">
+            <mj-navbar-link href="https://waxlondon.com/collections/black-friday" css-class="header-link" padding="8px">BLACK FRIDAY</mj-navbar-link>
+            <mj-navbar-link href="https://waxlondon.com/collections/aw25" css-class="header-link" padding="8px">AW25</mj-navbar-link>
+            <mj-navbar-link href="https://waxlondon.com/collections/all-clothing" css-class="header-link" padding="8px">CLOTHING</mj-navbar-link>
+          </mj-navbar>
+        </mj-column><!-- End of Navbar -->
+      </mj-group>
     
     </mj-section><!-- End of Header Section -->
       
